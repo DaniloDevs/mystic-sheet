@@ -1,8 +1,8 @@
 import { cn } from "@/lib/utils"
 import Link from "next/link"
 
-
-export type SideBarProps<T = SideBarNavLinkProps> = {
+// eslint-disable-next-line
+export type SideBarProps<T = any> = {
      children: React.ReactNode
      className?: string
 } & T
