@@ -2,7 +2,7 @@ import { cn } from "@/lib/utils"
 import Link from "next/link"
 
 
-export type SideBarProps<T = any> = {
+export type SideBarProps<T = SideBarNavLinkProps> = {
      children: React.ReactNode
      className?: string
 } & T

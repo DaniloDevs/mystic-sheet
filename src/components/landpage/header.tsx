@@ -2,9 +2,7 @@ import Link from "next/link";
 
 export default function Header() {
      return (
-
-
-          <header className="px-4 py-6 border-b h-14 flex items-center">
+          <header className="px-4 py-6 border-b-2 backdrop-blur-sm h-14 flex items-center">
                <Link
                     href="/"
                     className="flex items-center justify-center"
@@ -32,7 +30,7 @@ export default function Header() {
                          Contato
                     </Link>
                     <Link
-                         href="#"
+                         href="/auth"
                          className="text-sm font-medium hover:rounded-2xl hover:bg-violet-700 underline-offset-4 px-5 py-1 rounded-xl text-white bg-violet-600 duration-500"
                     >
                          Acessar
