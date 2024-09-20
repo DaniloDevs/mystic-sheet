@@ -1,16 +1,15 @@
 import SideBar from "@/components/dashboard/sidebar";
 import { auth } from "@/services/auth";
-import { PropsWithChildren } from "react";
+import type { PropsWithChildren } from "react";
 
+export default async function Layout({ children }: PropsWithChildren) {
+	const session = await auth();
 
-export default async function Layout({ children }: PropsWithChildren,) {
-     const session = await auth()
-     
-     return (
-          <div className="grid grid-cols-[14rem_1fr] gap-4">
-               <SideBar user={session?.user} />
+	return (
+		<div className="grid grid-cols-[14rem_1fr] gap-4">
+			<SideBar user={session?.user} />
 
-               {children}
-          </div>
-     )
+			{children}
+		</div>
+	);
 }
