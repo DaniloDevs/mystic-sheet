@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -13,6 +12,54 @@ body {
   }
 }
 
+@font-face {
+  font-family: 'Cinzel';
+  font-weight: 900;
+  font-style: normal;
+  src: url('/caminho/para/fonts/cinzel/Cinzel-Black.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Cinzel';
+  font-weight: 400;
+  font-style: normal;
+  src: url('/public/fonts/cinzel/Cinzel-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Cinzel';
+  font-weight: 500;
+  font-style: normal;
+  src: url('/public/fonts/cinzel/Cinzel-Medium.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Cinzel';
+  font-weight: 600;
+  font-style: normal;
+  src: url('/public/fonts/cinzel/Cinzel-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Cinzel';
+  font-weight: 700;
+  font-style: normal;
+  src: url('/public/fonts/cinzel/Cinzel-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Cinzel';
+  font-weight: 800;
+  font-style: normal;
+  src: url('/public/fonts/cinzel/Cinzel-ExtraBold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Cinzel';
+  font-weight: 900;
+  font-style: normal;
+  src: url('/public/fonts/cinzel/Cinzel-Black.ttf') format('truetype');
+}
 
 @layer base {
   :root {

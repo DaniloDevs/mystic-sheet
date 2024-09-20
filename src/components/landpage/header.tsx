@@ -1,24 +1,24 @@
 import Link from "next/link";
 
-export default function Header() {
+export default function LandPageHeader() {
      return (
           <header className="px-4 py-6 border-b-2 backdrop-blur-sm h-14 flex items-center">
                <Link
                     href="/"
                     className="flex items-center justify-center"
                >
-                    <span className="font-bold">Mystic Sheet</span>
+                    <span className="font-cinzel text-2xl">Mystic Sheet</span>
                </Link>
 
                <nav className="ml-auto flex gap-4 text-center items-center conte sm:gap-6">
                     <Link
-                         href="/"
+                         href="#inicio"
                          className="text-sm font-medium hover:underline underline-offset-4"
                     >
                          Inicio
                     </Link>
                     <Link
-                         href="/"
+                         href="#sobre"
                          className="text-sm font-medium hover:underline underline-offset-4"
                     >
                          Sobre
