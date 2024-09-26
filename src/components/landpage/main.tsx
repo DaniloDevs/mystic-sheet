@@ -1,29 +1,22 @@
-import Image from "next/image";
-import Link from "next/link";
 import { Button } from "../ui/button";
 
 export default function LandPageMain() {
 	return (
 		<main className="mx-12 h-full">
-			<section
-				id="inicio"
-				className="w-full h-[88vh] flex flex-col items-center content-center gap-4 justify-center"
-			>
-				<div className="text-center gap-2 flex flex-col">
-					<h1 className="text-6xl italic font-cinzel">Forje suas Lendas</h1>
-					<h2 className="text-4xl font-cinzel">Controle seu Destino</h2>
+			<section className="flex flex-col items-center justify-center min-h-screen text-white px-4 gap-6 py-12">
+				<div>
+					<h1 className="text-6xl font-cinzel text-center mb-2">
+						Forje suas Lendas
+					</h1>
+					<p className="text-4xl font-cinzel text-gray-300 text-center">
+						Controle seu Destino
+					</p>
 				</div>
-				<Link href="/auth">
-					<Button
-						variant="outline"
-						className="text-2xl font-cinzel rounded-full  py-6 px-20 text-white bg-violet-700 hover:text-white hover:bg-violet-800/85"
-					>
-						Forje Agora!
-					</Button>
-				</Link>
+				<Button className="bg-purple-600 hover:bg-purple-700 text-wzhite text-xl px-10 py-5 rounded-full transition-colors">
+					Comece sua Jornada!
+				</Button>
 			</section>
 
-			<section id="sobre" className="w-full h-[100vh]"></section>
 		</main>
 	);
 }
